@@ -1,7 +1,4 @@
-from IPython.core.display import Math
-from IPython.core import display
 import sympy as sp
-import sys
 from RRLNHCCC.RR import solve_homogeneous, find_particular_solution
 from RRLNHCCC.Tools.latex_image import latex_image
 
@@ -27,12 +24,3 @@ def RR_SHOW(degree, coefficients, initial_conditions, g_n):
 
 
 
-
-def display_result(s):
-    if 'ipykernel' in sys.modules:
-        display(Math(s))
-    else:
-        print(s)
-
-if __name__ == "__main__":
-    RR_SHOW()
