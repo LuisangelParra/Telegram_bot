@@ -212,8 +212,11 @@ def respuesta_botones_inline(call):
     elif call.data == "show_result":
         bot.delete_message(cid, mid)
         RR_SHOW(RR[call.message.chat.id]['grado'], RR[call.message.chat.id]['coeficientes'], RR[call.message.chat.id]['condiciones_iniciales'], RR[call.message.chat.id]['funcion'])
-        foto = open('generated_images\solve_rr_results.png', 'rb')
-        bot.send_photo(cid, foto, "Resultado: ")
+        foto1 = open(r'generated_images/formula1.png', 'rb')
+        bot.send_photo(cid, foto1, "Formula con coeficientes no resueltos: ")
+
+        foto2 = open(r'generated_images/formula2.png', 'rb')
+        bot.send_photo(cid, foto2, "Formula con coeficientes resueltos: ")
         del RR[call.message.chat.id]
     elif call.data == "1.1":
         bot.delete_message(cid, mid)
