@@ -1,6 +1,5 @@
 import sympy as sp
 from RRLNHCCC.RR import solve_homogeneous, find_particular_solution
-from RRLNHCCC.Tools.latex_image import latex_image
 import pylab
 
 
