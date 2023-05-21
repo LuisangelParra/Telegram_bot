@@ -12,8 +12,6 @@ def RR_SHOW(degree, coefficients, initial_conditions, g_n):
     particular_sol = find_particular_solution(int(degree), coefficients, g_n)
     fn_unsolved = homogeneous_sol_unsolved + particular_sol
     fn_solved = homogeneous_sol_solved + particular_sol
-
-    
     
 
     fcr = "f(n) = " + sp.latex(sp.simplify(fn_unsolved))

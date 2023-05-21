@@ -1,2 +1,4 @@
 .venv
 .env
+/generated_images/
+```
